@@ -7,7 +7,7 @@ const TaskList = ({ tasks = [], onDelete = () => { } }) => {
             {tasks?.length ? (
                 <ul>
                     {tasks?.map(task => (
-                        <li key={task.id}>
+                        <li>
                             {task.title}{' '}
                             <button onClick={() => onDelete(task.id)}>Delete</button>
                         </li>

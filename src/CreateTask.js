@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const CreateTask = ({ onCreate = () => { } }) => {
-    const [title, setTitle] = useState('');
+    const [title, setTitle] = useState(null);
 
     const submit = event => {
         event.preventDefault();
